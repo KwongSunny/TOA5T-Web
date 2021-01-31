@@ -1,0 +1,20 @@
+body{
+    margin: 0px;   
+    font-family: -apple-system, Roboto, sans-serif, serif;
+    background-color: #1a1c1f;
+}
+
+*{
+    color: #8e959e;
+}
+
+.discordButton{
+    border: none;
+    color: white;
+    background-color: #e2c113;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+}

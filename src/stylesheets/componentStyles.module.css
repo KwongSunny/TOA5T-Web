@@ -1,0 +1,22 @@
+.Header{
+    background-color: #282b2e;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.headerLinks{
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.githubLink{
+    color:#8e959e;
+    text-decoration: none;
+}
