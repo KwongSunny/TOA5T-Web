@@ -4,32 +4,19 @@ import styles from '../stylesheets/index.module.css';
 
 // markup
 const IndexPage = () => {
-  //this variable will contain a string determining what 'page' to render
-  const [page, setPage] = React.useState('docs');
-  
-  console.log(setPage);
-  
-  //home page (invite to server, general description)
-  if(page === 'home'){
-    return (
-      <main style={styles}>
-        <Header page = {page} setPage={setPage}/>
+  return (
+    <main style={styles}>
+      <Header/>
+    
+      <a href = "https://discord.com/oauth2/authorize?client_id=795736084327301160&scope=bot&permissions=8" className = {styles.discordButton}>Discord</a>
       
-        <a href = "" className = {styles.discordButton}>Discord</a>
-        
-  
-  
-  
-  
-  
-      </main>
-    )
-  }
-  else if(page === 'docs'){
-    return(
-      <Header page = {page} setPage={setPage}/>
-    )
-  }
+
+
+
+
+
+    </main>
+  )
 }
 
 export default IndexPage

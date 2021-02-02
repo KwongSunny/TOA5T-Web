@@ -1,4 +1,5 @@
 .Header{
+    height: 30px;
     background-color: #282b2e;
     padding: 10px;
     font-weight: bold;
@@ -7,13 +8,35 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.toastIcon{
+    height: 30px;
+    margin-right: 6px;
+}
+
+.headerLeft{
+    display: inline-flex;
+}
+
 .headerLinks{
     font-weight: normal;
-    font-size: 16px;
     text-align: center;
     align-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.headerLinks * {
+    text-decoration: none;
+    border: none;
+    padding: 0px;
+    font-size: 18px;
+    background-color: #282b2e;
+    outline: none;
+}
+
+.headerLinks *:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .githubLink{

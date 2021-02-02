@@ -9,6 +9,9 @@ body{
 }
 
 .discordButton{
+    width: 100px;
+    text-align: center;
+    display: block;
     border: none;
     color: white;
     background-color: #e2c113;
@@ -17,4 +20,8 @@ body{
     padding: 10px 30px;
     border-radius: 6px;
     text-decoration: none;
+}
+
+.window{
+    height: 100vh;
 }

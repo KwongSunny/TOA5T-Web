@@ -1,25 +1,20 @@
 import React, { useEffect } from 'react';
+import {Link} from 'gatsby';
 import styles from '../stylesheets/componentStyles.module.css';
+import toastIcon from '../images/toast-icon.png';
 
-function Header({page, setPage}){
-
-
-
-    useEffect(() => {
-
-    }, [page])
-
+function Header(props){
     return (
         <div className = {styles.Header}>
-            <div>
-                <img src = ''/>
-                TOA5T
+            <div className = {styles.headerLeft}>
+                <img className = {styles.toastIcon} src = {toastIcon}/>
+                <div style = {{marginTop: 'auto'}}>TOA5T</div>
             </div>
             <div className = {styles.headerLinks}>
-                <div onClick = {() => setPage('home')}>Home</div> 
-                <div>Docs</div>
-                <a className = {styles.githubLink} href = "https://github.com/KwongSunny/PixelBot">Github</a> 
-                <span>Support</span>
+                <Link to="/">Home</Link>
+                <Link to='/Docs'>Docs</Link>
+                <a href = 'https://github.com/KwongSunny/PixelBot'>Github</a>
+                <Link to='/Support'>Support</Link>
             </div>
         </div>
     )

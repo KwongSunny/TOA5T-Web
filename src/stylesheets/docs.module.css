@@ -1,0 +1,26 @@
+.docStyles{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem 4rem;
+}
+
+.sectionButton{
+    font-size: 16px;
+    text-align: left;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: #1a1c1f;
+    padding: 6px;
+    margin: 4px 0px;
+    outline: none;
+}
+
+.sectionButton:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.docSiderbar{
+    height: 100vh;
+}
