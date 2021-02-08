@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
-import styles from '../stylesheets/docs.module.css';
+import docStyles from '../stylesheets/docs.module.css';
 
-function DocSidebar(){
-    const [subsection, setSubsection] = React.useState();
-
-    const subsections = ['Setting Up', 'Role Management', 'Music', 'Miscellaneous'];
-
-
+function DocSidebar({sections, currentSection, setSection}){
     return (    
-        <div className = {styles.docSidebar}>
-            {subsections.map(section => {return <div><button className = {styles.sectionButton}>{section}</button></div>})}
+        <div className = {docStyles.docSidebar}>
+            {sections.map(sec => {
+                if(currentSection === sec)
+                    return <div><button style = {{textDecoration:"underline"}} onClick = {() => {setSection(sec)}} className = {docStyles.sectionButton}>{sec}</button></div>
+                else
+                    return <div><button onClick = {() => {setSection(sec)}} className = {docStyles.sectionButton}>{sec}</button></div>
+            })}
 
         </div>
     )

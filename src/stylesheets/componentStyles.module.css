@@ -1,6 +1,6 @@
 .Header{
     height: 30px;
-    background-color: #282b2e;
+    background-color: #323338;
     padding: 10px;
     font-weight: bold;
     font-size: 22px;
@@ -30,7 +30,6 @@
     border: none;
     padding: 0px;
     font-size: 18px;
-    background-color: #282b2e;
     outline: none;
 }
 

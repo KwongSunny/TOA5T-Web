@@ -9,12 +9,7 @@ const IndexPage = () => {
       <Header/>
     
       <a href = "https://discord.com/oauth2/authorize?client_id=795736084327301160&scope=bot&permissions=8" className = {styles.discordButton}>Discord</a>
-      
-
-
-
-
-
+    
     </main>
   )
 }
