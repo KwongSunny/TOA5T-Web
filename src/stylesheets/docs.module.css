@@ -1,7 +1,8 @@
 .docStyles{
     display:grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 1rem 4rem;
+    grid-template-columns: 220px 1fr;
+    margin: 1rem 12rem;
+    height:90%;
 }
 
 .sectionButton{
@@ -10,7 +11,7 @@
     width: auto;
     height: auto;
     border: none;
-    background-color: #1a1c1f;
+    background-color: #262729;
     padding: 6px;
     margin: 4px 0px;
     outline: none;
@@ -21,6 +22,34 @@
     color: white;
 }
 
-.docSiderbar{
-    height: 100vh;
+.docSidebar{
+    border-right:solid;
+    height:100%;
+}
+
+.sectionHeading{
+    color: #b7bec7;
+    text-decoration: underline;
+}
+
+.commandHeading{
+    color: #b7bec7;
+    margin-bottom: 10px;
+}
+
+.commandUsage{
+    background-color: #18181A;
+    border-radius: 3px;
+    padding: 5px;
+    width: 94%;
+    margin: auto;
+}
+
+.documentation{
+    margin-left: 40px;
+}
+
+.subsection{
+    border-left: dashed;
+    padding-left: 10px;
 }
