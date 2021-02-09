@@ -45,6 +45,11 @@
     margin: auto;
 }
 
+.comment{
+    color: #bdb588;
+    font-style: italic;
+}
+
 .documentation{
     margin-left: 40px;
 }
@@ -52,4 +57,8 @@
 .subsection{
     border-left: dashed;
     padding-left: 10px;
+}
+
+.subsection:hover{
+    border-color: white;
 }
