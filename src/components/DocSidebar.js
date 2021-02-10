@@ -6,7 +6,7 @@ function DocSidebar({sections, currentSection, setSection}){
         <div className = {docStyles.docSidebar}>
             {sections.map(sec => {
                 if(currentSection === sec)
-                    return <div><button style = {{textDecoration:"underline"}} onClick = {() => {setSection(sec)}} className = {docStyles.sectionButton}>{sec}</button></div>
+                    return <div><button style = {{color:"white"}} onClick = {() => {setSection(sec)}} className = {docStyles.sectionButton}>{sec}</button></div>
                 else
                     return <div><button onClick = {() => {setSection(sec)}} className = {docStyles.sectionButton}>{sec}</button></div>
             })}
