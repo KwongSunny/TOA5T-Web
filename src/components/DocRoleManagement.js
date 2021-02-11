@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import DocSidebar from '../components/DocSidebar.js';
 import docStyles from '../stylesheets/docs.module.css';
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 
 const DocRoleManagement = ({sections, section, setSection}) => {
+    const [autoroleDisplay, setAutoroleDisplay] = useState(false);
+    const [reactionroleDisplay, setReactionroleDisplay] = useState(false);
+
+    useEffect(() => {
+
+    }, [autoroleDisplay, reactionroleDisplay]);
+
     return(
         <div className={docStyles.docStyles}>
             <div>
@@ -29,19 +36,19 @@ const DocRoleManagement = ({sections, section, setSection}) => {
                             ~autorole @role
                         </div>
                         <br />
-
-                        <div>
-                            Examples:
-                        </div><br />
-                        <div className = {docStyles.commandUsage}>
-                            <span className = {docStyles.comment}># sets the server's default role to @member</span><br /><br />
-                            ~autorole @member
-                        </div><br />
-                        <div>
-                            Permissions: MANAGE_ROLES
-                        </div>
-
-
+                        <button onClick = {() => {setAutoroleDisplay(!autoroleDisplay)}}>Show</button><br /><br />
+                        {autoroleDisplay && <div>
+                            <div>
+                                Examples:
+                            </div><br />
+                            <div className = {docStyles.commandUsage}>
+                                <span className = {docStyles.comment}># sets the server's default role to @member</span><br /><br />
+                                ~autorole @member
+                            </div><br />
+                            <div>
+                                Permissions: MANAGE_ROLES
+                            </div>
+                        </div>}
                     </div>
                     {/*END AUTOROLE*/}
                     
@@ -63,22 +70,25 @@ const DocRoleManagement = ({sections, section, setSection}) => {
                             ~reactionrole @role:reaction, @role2:reaction2...
                         </div><br />
 
-                        <div>
-                            For more advanced usages, you can also reassign reactionrole posts using another message's id
-                        </div>
+                        <button onClick = {() => {setReactionroleDisplay(!reactionroleDisplay)}}>Show</button><br /><br />
+                        {reactionroleDisplay && <div>
+                            <div>
+                                For more advanced usages, you can also reassign reactionrole posts using another message's id
+                            </div>
 
-                        <div>
-                            Examples:
-                        </div><br />
+                            <div>
+                                Examples:
+                            </div><br />
 
-                        <div className = {docStyles.commandUsage}>
-                            <span className = {docStyles.comment}># Create a reaction post which when reacted to gives out either member or guest role</span><br /><br />
-                            ~reactionrole @member:🔴, @guest:🔵
-                        </div><br />
-                        
-                        <div>
-                        Permissions: MANAGE_ROLES
-                        </div>
+                            <div className = {docStyles.commandUsage}>
+                                <span className = {docStyles.comment}># Create a reaction post which when reacted to gives out either member or guest role</span><br /><br />
+                                ~reactionrole @member:🔴, @guest:🔵
+                            </div><br />
+                            
+                            <div>
+                            Permissions: MANAGE_ROLES
+                            </div>
+                        </div>}
                     </div>
                     {/*END REACTIONROLE*/}
 

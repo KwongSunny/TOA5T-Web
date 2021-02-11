@@ -41,8 +41,7 @@
     background-color: #18181A;
     border-radius: 3px;
     padding: 5px;
-    width: 94%;
-    margin: auto;
+    width: auto;
 }
 
 .comment{
@@ -60,6 +59,7 @@
 .subsection{
     border-left: dashed;
     padding-left: 10px;
+    margin:auto;
 }
 
 .subsection:hover{
