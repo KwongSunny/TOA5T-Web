@@ -8,13 +8,19 @@ body{
     color: #8e959e;
 }
 
+.bigToastImg{
+    width: 50%;
+    margin: 50px;
+}
+
 .discordButton{
     height: 30px;
+    width: 230px;
+    margin: auto;
     align-items: center;
     text-align: center;
-    display: inline-flex;
+    display: block;
     border: none;
-    color: white;
     background-color: #e2c113;
     font-size: 20px;
     font-weight: bold;
@@ -26,6 +32,18 @@ body{
 .discordLogo{
     height: 100%;
     margin-right: 10px;
+    vertical-align: middle;
+}
+
+.discordButtonText{
+    vertical-align: middle;
+    color: white;
+}
+
+.middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 60px;
 }
 
 .footer{

@@ -12,7 +12,7 @@ function Header(props){
             </div>
             <div className = {styles.headerLinks}>
                 <Link to="/">Home</Link>
-                <Link to='/Docs'>Docs</Link>
+                <Link to='/Docs'>Commands</Link>
                 <a href = 'https://github.com/KwongSunny/PixelBot'>Github</a>
                 <Link to='/Support'>Support</Link>
             </div>
