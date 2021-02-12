@@ -1,8 +1,13 @@
 .docStyles{
     display:grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 1fr 4fr;
     margin: 1rem 12rem;
     height:90%;
+}
+
+.arrowImg{
+    vertical-align: middle;
+    width: 20px;
 }
 
 .sectionButton{

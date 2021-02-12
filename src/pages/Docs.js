@@ -5,11 +5,13 @@ import docStyles from '../stylesheets/docs.module.css';
 import styles from '../stylesheets/index.module.css';
 import DocRoleManagement from '../components/DocRoleManagement.js';
 import DocServerManagement from '../components/DocServerManagement.js';
+import DocMisc from '../components/DocMisc.js'
+import DocMusic from '../components/DocMusic.js';
 
 const Docs = (props) => {
 
   const [section, setSection] = useState('Setting Up');
-  const sections = ['Setting Up', 'Server Management', 'Role Management', 'Music', 'Miscallaneous'];
+  const sections = ['Setting Up', 'Server Management', 'Role Management', 'Music', 'Miscellaneous'];
 
   useEffect(() => {
 
@@ -65,14 +67,20 @@ const Docs = (props) => {
   else if(section === 'Music'){
     return(
       <main>
-
+        <div className = {styles.window}>
+          <Header />
+          <DocMusic sections = {sections} section = {section} setSection = {setSection}/>
+        </div>  
       </main>
     );
   }
-  else if(section === 'Miscallaneous'){
+  else if(section === 'Miscellaneous'){
     return(
       <main>
-
+        <div className = {styles.window}>
+          <Header />
+          <DocMisc sections = {sections} section = {section} setSection = {setSection}/>
+        </div>  
       </main>
     );
   }
