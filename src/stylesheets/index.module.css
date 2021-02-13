@@ -52,8 +52,13 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 200px;
+    height: 24%;
     background-color: #323338;
+}
+
+.footerSection{
+    margin: 30px;
+
 }
 
 .window{

@@ -7,12 +7,16 @@ import toastImg from '../images/toast-icon.png';
 // markup
 const IndexPage = () => {
   return (
-    <main style={styles}>
+    <main>
       <Header/>
       <div>
         <div className = {styles.middle}>
-          <div>
-            An ever-updating Discord bot with easy to use, and easy to manage commands! Use TOA5T's feature rich services to enhance YOUR server!
+          <div style = {{margin:"10px"}}>
+            An ever-updating Discord bot with easy to use and helpful commands!
+            <div style = {{paddingLeft:"6em"}}>Use TOA5T's variety of services to enhance your server!"</div>
+
+
+            <div>Play Music </div>
           </div>
 
           <div style = {{textAlign:"center"}}>
@@ -29,13 +33,13 @@ const IndexPage = () => {
         </div>
 
         <div className = {styles.footer}>
-          <div>
+          <div className = {styles.footerSection}>
             Easy to use commands!
           </div>
-          <div>
+          <div className = {styles.footerSection}>
             Manage your server with ease!
           </div>
-          <div>
+          <div className = {styles.footerSection}>
             Music playability!
           </div>
         </div>
