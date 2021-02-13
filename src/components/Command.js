@@ -5,7 +5,8 @@ import arrowRight from '../images/arrow-right.png';
 import arrowDown from '../images/arrow-down.png';
 
 const Command = ({commandName, description, usage, advancedDesc, advancedUsage, examples, permissions, display, setDisplay}) => {
-    
+    if(!permissions) permissions = "n/a"
+
     return(
         <div className = {docStyles.subsection}>
             <h3 className = {docStyles.commandHeading}>{commandName}</h3>

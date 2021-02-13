@@ -14,7 +14,7 @@ function Header(props){
                 <Link to="/">Home</Link>
                 <Link to='/Docs'>Commands</Link>
                 <a href = 'https://github.com/KwongSunny/PixelBot'>Github</a>
-                <Link to='/Support'>Support</Link>
+                <a href = 'https://discord.gg/2wJA6N2m3V'>Support</a>
             </div>
         </div>
     )

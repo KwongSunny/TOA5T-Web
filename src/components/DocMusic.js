@@ -120,7 +120,6 @@ const DocMusic = ({sections, section, setSection}) => {
                             commandName = "Queue"
                             description = "Displays a queue of the server."
                             usage = '~queue'
-                            permissions = "n/a"
                             display = {queueDisplay}
                             setDisplay = {setQueueDisplay}
 
