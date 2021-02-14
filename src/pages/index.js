@@ -2,7 +2,11 @@ import * as React from "react"
 import Header from '../components/Header.js';
 import styles from '../stylesheets/index.module.css';
 import discordTransparent from '../images/discord-transparent.png';
-import toastImg from '../images/toast-icon.png'; 
+import toastImg from '../images/toast-icon.png';
+import alwaysAvailImg from '../images/always-avail.png';
+import musicNoteImg from '../images/music-note.png';
+import easyImg from '../images/easy-to-use.png';
+import openDoorsImg from '../images/open-doors.png';
 
 // markup
 const IndexPage = () => {
@@ -11,14 +15,6 @@ const IndexPage = () => {
       <Header/>
       <div>
         <div className = {styles.middle}>
-          <div style = {{margin:"10px"}}>
-            An ever-updating Discord bot with easy to use and helpful commands!
-            <div style = {{paddingLeft:"6em"}}>Use TOA5T's variety of services to enhance your server!"</div>
-
-
-            <div>Play Music </div>
-          </div>
-
           <div style = {{textAlign:"center"}}>
             <div>
               <img className = {styles.bigToastImg} src = {toastImg} />
@@ -34,12 +30,19 @@ const IndexPage = () => {
 
         <div className = {styles.footer}>
           <div className = {styles.footerSection}>
-            Easy to use commands!
+            <img className = {styles.footerImg} src = {easyImg}/><br />
+            Easy to use!
           </div>
           <div className = {styles.footerSection}>
-            Manage your server with ease!
+            <img className = {styles.footerImg}  src = {openDoorsImg}/><br />
+            Open source!
           </div>
           <div className = {styles.footerSection}>
+            <img className = {styles.footerImg}  src = {alwaysAvailImg}/><br />
+            Always available!
+          </div>
+          <div className = {styles.footerSection}>
+            <img className = {styles.footerImg} src = {musicNoteImg}/><br />
             Music playability!
           </div>
         </div>

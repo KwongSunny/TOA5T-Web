@@ -26,7 +26,7 @@ const DocMisc = ({sections, section, setSection}) => {
                     {/*GETPREFIX COMMAND*/}
                         <Command
                             commandName = "Getprefix"
-                            description = "Gets TOA5T's prefix for the server."
+                            description = "Gets TOA5T's prefix for the server. This will always use the default prefix ~."
                             usage = "~getprefix"
                             display = {getprefixDisplay}
                             setDisplay = {setGetprefixDisplay}
