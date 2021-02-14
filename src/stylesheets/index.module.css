@@ -9,7 +9,7 @@ body{
 }
 
 .bigToastImg{
-    width: 50%;
+    height: 200px;
     margin: 50px;
 }
 
@@ -41,8 +41,8 @@ body{
 }
 
 .middle{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    height: 70vh;
     margin: 40px 60px;
 }
 
@@ -51,12 +51,18 @@ body{
     position: absolute;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 24%;
     background-color: #323338;
 }
 
+.footerImg{
+    width: 80px;
+}
+
 .footerSection{
+    text-align:center;
+    font-weight: bold;
     margin: 30px;
 
 }
